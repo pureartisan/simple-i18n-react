@@ -1,0 +1,53 @@
+{
+  "name": "@prageeths/simple-i18n-react",
+  "version": "0.0.1",
+  "description": "Simple i18n React component using @prageeth/simple-i18n library",
+  "license": "Apache-2.0",
+  "keywords": [
+    "i18n",
+    "l10n",
+    "internationalisation",
+    "localisation",
+    "simple-i18n",
+    "react"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir ./dist --source-maps --ignore ./test",
+    "test": "./node_modules/.bin/mocha -r @babel/register -r jsdom-global/register test/**/*test.js",
+    "prepare": "npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:prageeth/simple-i18n-react.git"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@prageeths/simple-i18n": "^1.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "@babel/register": "latest",
+    "@prageeths/simple-i18n": "^1.2.0",
+    "chai": "latest",
+    "coffeescript": "latest",
+    "enzyme": "latest",
+    "enzyme-adapter-react-16": "latest",
+    "jsdom": "13.0.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "latest",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "sinon": "latest",
+    "sinon-chai": "latest"
+  }
+}
