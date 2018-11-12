@@ -1,5 +1,3 @@
 import { Translate } from './translate';
 
-export {
-  Translate
-};
+export default Translate;
