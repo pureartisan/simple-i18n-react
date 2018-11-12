@@ -1,6 +1,6 @@
 {
   "name": "@prageeths/simple-i18n-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple i18n React component using @prageeth/simple-i18n library",
   "license": "Apache-2.0",
   "keywords": [
