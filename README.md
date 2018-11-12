@@ -1,7 +1,7 @@
 # Simple I18n React [![CircleCI](https://circleci.com/gh/prageeth/node-js-boilerplate.svg?style=svg)](https://circleci.com/gh/prageeth/node-js-boilerplate)
 
 React component for i18n translations using [@prageeth/simple-i18n](https://github.com/prageeth/simple-i18n).
-This supports translations to have HTML tags that are safe to use (by avoiding updating the DOM html directly, disabling XXS).
+This supports translations to have HTML tags that are safe to use (by avoiding updating the DOM html directly, disabling XSS).
 
 ## Installation
 
