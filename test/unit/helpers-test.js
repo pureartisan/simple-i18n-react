@@ -296,7 +296,7 @@ describe('LinkHanlder', () => {
 
       it('should ignore illegal attributes', () => {
 
-        const str = 'id="test" onclick="myHalder();" href="some-link"';
+        const str = 'id="test" onclick="myHalder();" onsomething="myOtherHalder();" href="some-link"';
         // ignore 'on' event attributes
         expect(extractAttributes(str)).to.deep.equal({
           id: 'test',
@@ -316,7 +316,138 @@ describe('LinkHanlder', () => {
 
     describe('splitByTags', () => {
 
-      // TODO add tests
+      it('should not split when there are no tags', () => {
+
+        const str = 'Hello World';
+        expect(splitByTags(str)).to.deep.equal([{
+          text: 'Hello World'
+        }]);
+
+      });
+
+      it('should split when there are tags', () => {
+
+        const str = 'Hello <strong>awesome</strong> World';
+        expect(splitByTags(str)).to.deep.equal([{
+          text: 'Hello '
+        },{
+          tag: 'strong',
+          text: 'awesome',
+          attr: {}
+        }, {
+          text: ' World'
+        }]);
+
+      });
+
+      it('should handle case insensitive tags', () => {
+
+        const str = 'Hello <StrONg>awesome</strong> World';
+        expect(splitByTags(str)).to.deep.equal([{
+          text: 'Hello '
+        },{
+          tag: 'strong',
+          text: 'awesome',
+          attr: {}
+        }, {
+          text: ' World'
+        }]);
+
+      });
+
+      it('should handle void tags', () => {
+
+        const str = 'Hello <br/> World';
+        expect(splitByTags(str)).to.deep.equal([{
+          text: 'Hello '
+        },{
+          tag: 'br',
+          text: undefined,
+          attr: {}
+        }, {
+          text: ' World'
+        }]);
+
+      });
+
+      it('should handle void tags specified as full tags', () => {
+
+        const str = 'Hello <br></br> World';
+        expect(splitByTags(str)).to.deep.equal([{
+          text: 'Hello '
+        },{
+          tag: 'br',
+          text: '',
+          attr: {}
+        }, {
+          text: ' World'
+        }]);
+
+      });
+
+      it('should handle void tags specified tags with attributes and text', () => {
+
+        const str = 'Hello <br className="my-class">test</br> World';
+        expect(splitByTags(str)).to.deep.equal([{
+          text: 'Hello '
+        },{
+          tag: 'br',
+          text: 'test',
+          attr: {
+            className: 'my-class'
+          }
+        }, {
+          text: ' World'
+        }]);
+
+      });
+
+      it('should handle attributes and text', () => {
+
+        const str = 'Hello <span className="my-class" data-test-id="my-test-id">test</span> World';
+        expect(splitByTags(str)).to.deep.equal([{
+          text: 'Hello '
+        },{
+          tag: 'span',
+          text: 'test',
+          attr: {
+            className: 'my-class',
+            'data-test-id': 'my-test-id'
+          }
+        }, {
+          text: ' World'
+        }]);
+
+      });
+
+      it('should handle tags only', () => {
+
+        const str = '<strong>test</strong>';
+        expect(splitByTags(str)).to.deep.equal([{
+          tag: 'strong',
+          text: 'test',
+          attr: {}
+        }]);
+
+      });
+
+      it('should handle dynamic variables', () => {
+
+        const str = '<strong>{firstName}</strong>';
+        expect(splitByTags(str)).to.deep.equal([{
+          tag: 'strong',
+          text: '{firstName}',
+          attr: {}
+        }]);
+
+      });
+
+      it('should handle empty string', () => {
+
+        const str = '';
+        expect(splitByTags(str)).to.deep.equal([]);
+
+      });
 
     });
 
