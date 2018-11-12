@@ -64,7 +64,7 @@ You are allowed to use basic HTML tags in the translations, with basic attribute
 ```
 const languages = {
    'en': {
-      'help-info.body': 'For more information, visit our <a href="http://my-support.com">support page</a><br />Don\'t forget to leave us an amazing <strong>review</strong>.'
+      'help-info.body': 'For more information, visit our <a href="http://my-support.com">support page</a><br />Don\'t forget to leave us an amazing <strong className="red-text">review</strong>.'
    }
 };
 
@@ -79,7 +79,7 @@ const HelpInfo = () => (
 <div class="help-info">
   For more information, visit our <a href="#">support page</a>
   <br />
-  Don\'t forget to leave us an amazing <strong>review</strong>.
+  Don\'t forget to leave us an amazing <strong class="red-text">review</strong>.
 </div>
 ```
 
