@@ -1,4 +1,3 @@
-import 'raf/polyfill';
 import React from 'react';
 import { mount, configure as enzymeConfigure } from 'enzyme';
 import { expect, use as chaiUse } from 'chai';
