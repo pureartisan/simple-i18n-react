@@ -36,7 +36,8 @@ const Translate = ({ i18nKey, options, onLinkClick }) => {
 
 Translate.propTypes = {
   i18nKey: PropTypes.string.isRequired,
-  options: PropTypes.object.isRequired
+  options: PropTypes.object.isRequired,
+  onLinkClick: PropTypes.func
 };
 
 Translate.defaultProps = {
