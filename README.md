@@ -1,4 +1,4 @@
-# Simple I18n React [![npm](https://img.shields.io/npm/v/@prageeths/simple-i18n-react/latest.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com)]() [![CircleCI](https://circleci.com/gh/prageeth/node-js-boilerplate.svg?style=svg)](https://circleci.com/gh/prageeth/node-js-boilerplate)
+# Simple I18n React [![npm version](https://badge.fury.io/js/%40prageeths%2Fsimple-i18n-react.svg)](https://badge.fury.io/js/%40prageeths%2Fsimple-i18n-react) [![CircleCI](https://circleci.com/gh/prageeth/node-js-boilerplate.svg?style=svg)](https://circleci.com/gh/prageeth/node-js-boilerplate)
 
 React component for i18n translations using [@prageeth/simple-i18n](https://github.com/prageeth/simple-i18n).
 This supports translations to have HTML tags that are safe to use (by avoiding updating the DOM html directly, disabling XSS).
