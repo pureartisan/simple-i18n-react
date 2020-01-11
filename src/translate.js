@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import i18n from '@prageeths/simple-i18n';
+import i18n from '@pureartisan/simple-i18n';
 
 import { splitByTags } from './helpers';
 import { Element } from './element';

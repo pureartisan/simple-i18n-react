@@ -4,7 +4,7 @@ import { expect, use as chaiUse } from 'chai';
 import { stub } from 'sinon';
 import sinonChai from 'sinon-chai';
 import EnzymeReactAdapter from 'enzyme-adapter-react-16';
-import SimpleI18n from '@prageeths/simple-i18n';
+import SimpleI18n from '@pureartisan/simple-i18n';
 
 import { Element } from '../../src/element';
 import { LinkHanlder } from '../../src/link-handler';

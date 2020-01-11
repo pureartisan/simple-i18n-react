@@ -1,5 +1,5 @@
 import React from 'react';
-import i18n from '@prageeths/simple-i18n';
+import i18n from '@pureartisan/simple-i18n';
 
 import { isVoidTag, isIllegalTag, isLinkTag } from './helpers';
 
