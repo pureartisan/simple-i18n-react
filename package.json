@@ -1,7 +1,7 @@
 {
-  "name": "@prageeths/simple-i18n-react",
+  "name": "@pureartisan/simple-i18n-react",
   "version": "1.1.0",
-  "description": "Simple i18n React component using @prageeth/simple-i18n library",
+  "description": "Simple i18n React component using @pureartisan/simple-i18n library",
   "license": "Apache-2.0",
   "keywords": [
     "i18n",
@@ -19,11 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:prageeth/simple-i18n-react.git"
+    "url": "git@github.com:pureartisan/simple-i18n-react.git"
   },
   "dependencies": {},
   "peerDependencies": {
-    "@prageeths/simple-i18n": "^1.3.0",
+    "@pureartisan/simple-i18n": "^1.6.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
@@ -36,7 +36,6 @@
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
     "@babel/register": "latest",
-    "@prageeths/simple-i18n": "latest",
     "chai": "latest",
     "coffeescript": "latest",
     "enzyme": "latest",

@@ -1,28 +1,28 @@
-# Simple I18n React [![npm version](https://badge.fury.io/js/%40prageeths%2Fsimple-i18n-react.svg)](https://badge.fury.io/js/%40prageeths%2Fsimple-i18n-react) [![CircleCI](https://circleci.com/gh/prageeth/node-js-boilerplate.svg?style=svg)](https://circleci.com/gh/prageeth/node-js-boilerplate)
+# Simple I18n React [![npm version](https://badge.fury.io/js/%40pureartisan%2Fsimple-i18n-react.svg)](https://badge.fury.io/js/%40pureartisan%2Fsimple-i18n-react) [![CircleCI](https://circleci.com/gh/pureartisan/node-js-boilerplate.svg?style=svg)](https://circleci.com/gh/pureartisan/node-js-boilerplate)
 
-React component for i18n translations using [@prageeth/simple-i18n](https://github.com/prageeth/simple-i18n).
+React component for i18n translations using [@pureartisan/simple-i18n](https://github.com/pureartisan/simple-i18n).
 This supports translations to have HTML tags that are safe to use (by avoiding updating the DOM html directly, disabling XSS).
 
 ## Installation
 
-Note, this module has a peer-dependency with `@prageeths/simple-i18n`. We decided to do that as this is an extension of `@prageeths/simple-i18n` for react and we don't want to double-include the dependency in the distrubition.
+Note, this module has a peer-dependency with `@pureartisans/simple-i18n`. We decided to do that as this is an extension of `@pureartisans/simple-i18n` for react and we don't want to double-include the dependency in the distrubition.
 
 ```
-npm install @prageeths/simple-i18n-react @prageeths/simple-i18n
+npm install @pureartisans/simple-i18n-react @pureartisans/simple-i18n
 ```
 
 ## Getting started
 
-For usage information of `@prageeths/simple-i18n`, please checkout the [github repo](https://github.com/prageeth/simple-i18n).
+For usage information of `@pureartisans/simple-i18n`, please checkout the [github repo](https://github.com/prageeth/simple-i18n).
 
 ## Translations
 
 ```
 // ES5
-var Translate = require('@prageeths/simple-i18n-react');
+var Translate = require('@pureartisans/simple-i18n-react');
 
 // ES6
-import Translate from '@prageeths/simple-i18n-react';
+import Translate from '@pureartisans/simple-i18n-react';
 
 // assuming i18n translations are already setup using SimpleI18n as below:
 const languages = {
@@ -96,7 +96,7 @@ Illegal tags such as `script`, `iframe`, `img` are ignored and their content tex
   ...
 };
 
-// rendering 
+// rendering
 <div className="illegal-example">
    <Translate i18nKey="illegal-translation" />
 </div>
@@ -117,7 +117,7 @@ Illegal attribtues such as any event handlers `onclick`, `onload`, `onkeypress` 
   ...
 };
 
-// rendering 
+// rendering
 <div className="illegal-attribtues-example">
    <Translate i18nKey="illegal-attributes" />
 </div>
@@ -134,7 +134,7 @@ You should not be using event handlers in translations. If you are in a situatio
 In general, applcations have their own way of handling link clicks. Such as opening on a new tab, etc. This can be initialised one time at the start of your application.
 
 ```
-import Translate from '@prageeths/simple-i18n-react';
+import Translate from '@pureartisans/simple-i18n-react';
 
 Translate.setDefaultLinkHandler(function(link) { // link was taken from 'href' attribute
    // my awesome way to handle the link click
