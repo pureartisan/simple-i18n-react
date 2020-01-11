@@ -1,4 +1,4 @@
-# Simple I18n React [![npm version](https://badge.fury.io/js/%40pureartisan%2Fsimple-i18n-react.svg)](https://badge.fury.io/js/%40pureartisan%2Fsimple-i18n-react) [![CircleCI](https://circleci.com/gh/pureartisan/node-js-boilerplate.svg?style=svg)](https://circleci.com/gh/pureartisan/node-js-boilerplate)
+# Simple I18n React [![npm version](https://badge.fury.io/js/%40pureartisan%2Fsimple-i18n-react.svg)](https://badge.fury.io/js/%40pureartisan%2Fsimple-i18n-react) [![CircleCI](https://circleci.com/gh/pureartisan/simple-i18n-react.svg?style=svg)](https://circleci.com/gh/pureartisan/simple-i18n-react)
 
 React component for i18n translations using [@pureartisan/simple-i18n](https://github.com/pureartisan/simple-i18n).
 This supports translations to have HTML tags that are safe to use (by avoiding updating the DOM html directly, disabling XSS).
