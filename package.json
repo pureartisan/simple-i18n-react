@@ -36,6 +36,7 @@
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
     "@babel/register": "latest",
+    "@pureartisan/simple-i18n": "^1.6.1",
     "chai": "latest",
     "coffeescript": "latest",
     "enzyme": "latest",
